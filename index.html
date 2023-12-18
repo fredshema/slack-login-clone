@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./images/logo.png" rel="icon" type="image/png" />
+    <title>Login Slack</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main h-screen bg-white">
+      <div class="grid h-full grid-cols-1 md:grid-cols-2">
+        <div
+          class="col-auto hidden md:flex bg-secondary flex-col justify-center items-center"
+        >
+          <img src="images/illustration.png" alt="Slack" class="img-fluid" />
+        </div>
+        <div class="grid-span-2 py-12">
+          <div class="flex flex-col justify-center items-center h-full">
+            <div class="max-w-md w-full px-5">
+              <img src="images/logo.png" alt="Slack" class="w-12 h-12 img-fluid" />
+              <h1 class="text-2xl font-bold mt-6 mb-3 text-gray-600">
+                Login to your Account
+              </h1>
+              <h2 class="text-gray-500 mb-8">
+                See what is going on with your business
+              </h2>
+              <div class="flex flex-col justify-center items-center mb-6">
+                <a
+                  href="#"
+                  class="flex items-center justify-center rounded-md px-3 py-2 mb-2 border border-gray-300 w-full hover:bg-gray-100"
+                >
+                  <img src="images/google.png" alt="Google" class="img-fluid" />
+                  <span class="ml-2 text-gray-400 font-bold">
+                    Continue with Google
+                  </span>
+                </a>
+              </div>
+              <div class="flex justify-center items-center mb-6">
+                <span
+                  class="border border-dashed border-gray-300 flex-1"
+                ></span>
+                <div class="text-gray-400 mb-2 flex-none px-3">
+                  Or sign in with Email
+                </div>
+                <span
+                  class="border border-dashed border-gray-300 flex-1"
+                ></span>
+              </div>
+              <form>
+                <div class="mb-4">
+                  <label
+                    for="email"
+                    class="block mb-2 font-semibold text-gray-500"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="mail@abc.com"
+                    class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-primary"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label
+                    for="email"
+                    class="block mb-2 font-semibold text-gray-500"
+                  >
+                    Password
+                  </label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="********"
+                    class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-primary"
+                  />
+                  <div class="flex justify-between mt-3">
+                    <div class="flex items-center">
+                      <input
+                        type="checkbox"
+                        name="remember"
+                        id="remember"
+                        class="mr-2 accent-primary focus:outline-none"
+                      />
+                      <label for="remember" class="text-gray-500"
+                        >Remember me</label
+                      >
+                    </div>
+                    <a href="#" class="text-primary font-bold"
+                      >Forgot password?</a
+                    >
+                  </div>
+                </div>
+
+                <div class="mb-4 mt-8">
+                  <button
+                    type="submit"
+                    class="w-full bg-primary text-white rounded-md px-3 py-2 font-bold focus:outline-none"
+                  >
+                    Login
+                  </button>
+                </div>
+              </form>
+              <div class="text-center mt-[5rem] mb-4">
+                <span class="text-gray-500">Not Registered yet?</span>
+                <a href="#" class="text-primary font-bold">Create an account</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
